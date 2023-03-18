@@ -1,7 +1,6 @@
-n, m = map(int, input().split())
-li = [0]*(n)
-for x in range(m):
-  i,j,k = map(int, input().split())
-  for y in range (i-1,j):
-    li[y] = k
-print(*li)
+size,_,*num=map(int,open(0).read().split())
+list=[0]*size
+while num:
+  i,j,k,*num=num
+  list[i-1:j]=[k]*(j-i+1)
+print(*list)
