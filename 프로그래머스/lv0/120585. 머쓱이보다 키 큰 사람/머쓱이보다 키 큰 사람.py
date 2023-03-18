@@ -1,2 +1,2 @@
 def solution(array, height):
-    return len([_ for _ in array if _ > height])
+    return len(list(filter(lambda _:_>height,array)))
