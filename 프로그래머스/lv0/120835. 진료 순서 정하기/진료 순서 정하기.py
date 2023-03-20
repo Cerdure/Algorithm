@@ -1,0 +1,1 @@
+solution=lambda a:[sorted(a,reverse=True).index(i)+1 for i in a]
