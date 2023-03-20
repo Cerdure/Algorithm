@@ -1,0 +1,1 @@
+solution=lambda s,d:2-len([i for i in d if sorted(s)==sorted(i)])
