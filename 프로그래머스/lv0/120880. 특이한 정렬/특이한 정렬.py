@@ -1,1 +1,1 @@
-solution=lambda l,n:[i[1] for i in sorted([(abs(n-i),i) for i in l],key=lambda i:(i[0],-i[1]))]
+solution=lambda l,n:sorted(l,key=lambda i:(abs(n-i),-i))
