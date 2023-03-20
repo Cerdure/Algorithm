@@ -1,4 +1,1 @@
-def solution(s):
-    s=[(i[0]+i[1])/2 for i in s]
-    d={n:len(s)-i for i,n in enumerate(sorted(s))}
-    return [d[i] for i in s]
+solution=lambda s:[sorted([i[0]+i[1] for i in s],reverse=True).index(i[0]+i[1])+1 for i in s]
