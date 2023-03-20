@@ -1,1 +1,1 @@
-solution=lambda s:len([i for i in range(abs(s[0]-s[1])+1,s[0]+s[1])])
+solution=lambda s:sum(s)-abs(s[0]-s[1])-1
