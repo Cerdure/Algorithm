@@ -1,0 +1,1 @@
+solution=lambda x:x%sum(map(int,str(x)))==0
