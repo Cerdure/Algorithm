@@ -1,8 +1,4 @@
-def solution(l):
-    s=sorted(sum(l,[]))
-    min,max=s[0],s[-1]
-    d=dict.fromkeys(range(min,max+1),0)
-    for i in l:
-        for j in range(i[0]+1,i[1]+1):d[j]+=1
-    return len(list(filter(lambda x:x[1]>1,d.items())))  
+def solution(lines):
+    sets = [set(range(min(l), max(l))) for l in lines]
+    return len(sets[0] & sets[1] | sets[0] & sets[2] | sets[1] & sets[2])
     
