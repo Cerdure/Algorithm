@@ -1,0 +1,1 @@
+solution=lambda n:sum(list(map(int,str(n))))
