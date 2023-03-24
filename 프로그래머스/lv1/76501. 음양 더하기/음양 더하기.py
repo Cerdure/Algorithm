@@ -1,0 +1,1 @@
+solution=lambda a,s:sum([n*(s[i]*2-1) for i,n in enumerate(a)])
