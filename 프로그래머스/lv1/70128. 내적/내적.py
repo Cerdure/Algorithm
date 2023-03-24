@@ -1,1 +1,1 @@
-solution=lambda a,b:sum([n*b[i] for i,n in enumerate(a)])
+solution=lambda a,b:sum([x*y for x,y in zip(a,b)])
