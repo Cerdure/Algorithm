@@ -1,0 +1,1 @@
+solution=lambda a,b:[[i[0]+i[1] for i in zip(x,y)] for x,y in zip(a,b)]
