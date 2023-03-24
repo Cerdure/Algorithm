@@ -1,0 +1,1 @@
+solution=lambda a:[n for i,n in enumerate(a[0:-1]) if i==len(a)+1 or n!=a[i+1]]+[a[-1]]
