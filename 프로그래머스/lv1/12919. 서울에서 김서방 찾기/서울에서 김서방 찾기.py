@@ -1,0 +1,1 @@
+solution=lambda s:"김서방은 "+str(s.index("Kim"))+"에 있다"
