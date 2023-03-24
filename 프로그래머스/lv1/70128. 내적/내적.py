@@ -1,0 +1,1 @@
+solution=lambda a,b:sum([n*b[i] for i,n in enumerate(a)])
