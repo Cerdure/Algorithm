@@ -1,0 +1,1 @@
+solution=lambda s:' '.join([''.join([v.upper() if i==0 else v.lower() for i,v in enumerate(ss)]) for ss in s.split(' ')])
