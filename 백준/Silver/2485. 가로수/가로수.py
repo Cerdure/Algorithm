@@ -1,9 +1,8 @@
-n,x=map(int,(input(),input()))
-l=[]
-for _ in range(n-1):
-  l.append((i:=int(input()))-x)
-  x=i
-x=l[0]  
-for i in l[1:]:
-  while i:x,i=i,x%i
-print(sum([i//x-1 for i in l]))
+import sys
+input=sys.stdin.readline
+l=[int(input()) for _ in range(int(input()))]
+g=l[1]-l[0]
+for i,v in enumerate(l[1:]):
+  p=l[i]=v-l[i]
+  while p:g,p=p,g%p
+print(sum(i//g-1 for i in l[:-1]))
