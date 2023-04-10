@@ -4,4 +4,4 @@ for i in [*open(0)][1:]:
   while n<i:n+=1;l.append(n);r+='+\n'
   if l.pop()!=i:r='NO';break
   else:r+='-\n'  
-print(r.rstrip())
+print(r)
